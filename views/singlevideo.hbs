@@ -1,0 +1,30 @@
+{{> navbar}}
+
+<div class="narrow-page-container">
+
+	<div class="row">
+		<div class="video-container">
+			{{#embedYoutube}}{{this}}{{/embedYoutube}}
+		</div>
+	</div>
+<br>
+	<div class="row">
+		<div class="col-sm-8">
+			<h4>{{this.video.promptString}}</h4>
+		</div>
+
+		<div class="col-sm-4">
+
+			<h5 class="text-right"> {{#formatDate}}{{this}}{{/formatDate}} </h5>
+		</div>
+		</div>
+	  <p> Email {{this.video.speaker}}@mit.edu to learn more! </p>
+	  <hr>
+
+		<!-- Temporarily removed upvote botton (commented out below) -->
+		<!-- <button type="button" id="video-upvote" class="btn btn-default">Upvote</button> -->
+
+
+</div>
+
+<script src="/javascripts/singlevideo.js"></script>

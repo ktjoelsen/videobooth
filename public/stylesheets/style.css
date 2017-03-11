@@ -1,0 +1,349 @@
+body {
+  padding-top: 50px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+p {
+  /*font-family: 'Muli', sans-serif;*/
+}
+
+h2, 
+h3 {
+  font-family: 'Karla', sans-serif;
+}
+
+
+
+/* Page widths */
+
+.page-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Used for About page, Single video*/
+.narrow-page-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+/*  NAVBAR  */
+h1#navbar-title {
+  color: rgb(159,1,17);
+  font-family:'Chalkduster';
+  /*font-family: 'Roboto';*/
+  font-weight: 500;
+  font-size: 1.5em;
+  opacity: .8;
+  text-align: center;
+  letter-spacing: .04em;
+  margin-top: -.12em;
+  /*margin-bottom: 1em;*/
+  padding:0;
+}
+
+span#nav {
+  color: rgb(30,30,30);
+  padding: 1.2%;
+}
+
+.navbar {
+  background: rgba(255,255,255,.9);
+
+}
+.navbar-nav > li > a {
+  color: rgb(30,30,30)!important;
+  font-family: 'Roboto', sans-serif!important;
+  text-shadow: none!important;
+  font-size: 16px;
+
+}
+
+.navbar-default {
+  color: rgb(30,30,30);
+}
+
+
+.navbar-brand img {
+  height: 100%;;
+  width: auto;
+}
+
+/* Videos page*/
+
+.problem-pitch {
+  padding: 1em 6em;
+  margin-bottom: 3em;
+  color: white;
+  background-image: url('../images/lobby7_blur3.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 250px;
+
+  position: relative;
+  /*-webkit-filter: contrast(110%) brightness(60%) saturate(130%);*/
+  /*filter: contrast(110%) brightness(60%) saturate(130%);*/
+}
+
+
+.problem-pitch p {
+  font-family: 'Muli', sans-serif;
+  font-size: 15pt;
+}
+
+#problem-pitch-overlay {
+  position: absolute;
+  background-color: black;
+  opacity: 0.1;
+  left: 0;
+  top: 0;
+  /*bottom: 20px;*/
+  overflow: none;
+  height: 100%;
+  width: 100%;
+}
+
+#problem-pitch-text {
+  color: #fff;
+  position: absolute;
+  margin-left: 3%;
+  top: 12%;
+  /*height: 100%;*/
+  z-index: 1;
+}
+
+#problem-pitch-text a {
+  text-decoration: none;
+}
+#problem-pitch-text .btn:hover {
+  opacity: 0.7;
+}
+
+#problem-pitch-text .btn p {
+  margin-bottom: 0;
+}
+
+.thumbnail {
+  border: none!important;
+  border-radius: 0!important;
+  
+ 
+}
+
+.video-panel-container {
+  padding-left: 30px!important;
+  padding-right: 30px!important;
+}
+
+.video-panel {
+  margin-bottom: 3em!important;
+  padding: 0!important;
+  border-bottom: 1px solid!important;
+  border-color: red!important;
+  /*box-shadow: none!important;*/
+  /*border-radius: 0!important;*/
+}
+
+.video-panel h3 {
+  margin-top: 0;
+  font-size: 14pt;
+}
+
+.video-panel img:hover {
+  opacity: 0.7;
+}
+
+/* size iframe according to parent*/
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/** landng page */
+
+
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    /*-webkit-filter: grayscale(90%);*/
+    /*-webkit-filter: blur(10px);*/
+    /*-moz-filter: blur(10px);*/
+    /*-o-filter: blur(10px);*/
+    /*-ms-filter: blur(10px);*/
+    -webkit-filter: contrast(110%) brightness(70%) saturate(130%);
+    filter: contrast(110%) brightness(70%) saturate(130%) blur(3px);
+    background: url(../images/mit.png) no-repeat;
+    background-size: cover; 
+
+}
+
+
+
+video#bgvid {
+    transition: 1s opacity;
+}
+.stopfade { opacity: .5; }
+
+video { 
+  display: block; 
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+      background: url(../imgages/mit.png) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+      display: none;
+    }
+}
+
+h1#title {
+  color: rgb(159,1,17);
+  font-family:'Chalkduster';
+  /*font-family: 'Roboto';*/
+  font-weight: 500;
+  font-size: 9em;
+  opacity: .8;
+  text-align: center;
+  letter-spacing: .04em;
+}
+
+span {
+  color: white;
+  padding: 1.2%;
+}
+
+button#vidpause {
+    background-color: Transparent;
+    border: none;
+    overflow: hidden;
+    outline:none;
+    font-family: 'Roboto';
+    font-weight: 900;
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    bottom:2%;
+    right:2%;
+}
+
+a#videos-link {
+  color: white;
+  opacity: .8;
+  font-size: 2em;
+  text-align: center;
+  display:table;
+  margin: auto;
+  font-family: 'Roboto';
+  margin-top: 4%;
+  border: 2px solid white ;
+  padding-right: .3em;
+  padding-left: .3em;
+  padding-top: .1em;
+  padding-bottom: .1em;
+}
+
+a#videos-link:hover{
+    text-decoration: none;
+    background: rgba(50,50,50,0.5);
+
+}
+
+/*.content:before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}*/
+
+/*.filter {
+  position: relative;
+  -webkit-filter: contrast(110%) brightness(110%) saturate(130%);
+  filter: contrast(110%) brightness(110%) saturate(130%);
+}
+.filter::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  background: rgba(243, 106, 188, 0.5);
+}
+*/
+@media (min-width: 1200px) {
+  .thumbnail.video-panel {
+      min-height: 368px!important;
+  }
+}
+
+
+/*@media (min-width: 992px) and (max-width: 1200px){
+  .thumbnail.video-panel {
+      min-height: 317px!important;
+  }
+}*/
+
+
+
+
+
+
+/* ABOUT page */
+.about-page {
+  margin-top: 2em;
+  padding: 2em;
+  /*background-color: rgba(51, 218, 162, 0.26);  */
+}
+
+.about-page h2 {
+  text-align: center;
+}
+
+.about-page hr {
+  /*background-color: white;*/
+  height: 3px;
+}
+
+.narrow-hr {
+  width: 5em;
+  height: 10px;
+  background-color: rgb(159,1,17);
+}

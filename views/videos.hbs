@@ -1,0 +1,49 @@
+
+{{> navbar}}
+
+<div class="problem-pitch">
+	<div id="problem-pitch-overlay">
+	</div>
+	<div id="problem-pitch-text">
+		<h2>If you could ask an MIT student anything, </br>what would it be?</h2>
+		<!-- <p>MIT is a beautiful diverse ecosystem of people and ideas.</p>
+		<p>At the same time, MIT is "siloed." It is easy to get stuck in ruts and not meet people outside of our own departments or living groups.</p>
+		<p>MIT People lets you meet people you would otherwise not meet.</p> -->
+		<p><i>We are doing an experiment to learn how we can pull people out of their own bubbles and make MIT more connected</i></p>
+		<div class="btn btn-default">
+			<p><a href="/about">Learn more</a></p>
+		</div>
+	</div>
+"
+</div>
+
+
+<div class="container">
+
+
+	<div class="row">	
+		{{#each videos}}
+			<!-- small box panel for each video -->
+			<div class="col-md-4 col-sm-6 video-panel-container">
+				<div class="thumbnail video-panel">
+					<!-- video image itself -->
+					<a href="/singlevideo/{{this._id}}">
+						{{#embedYoutubeImg}}{{this}}{{/embedYoutubeImg}}
+					</a>
+				
+					<!-- information about the video -->
+					<div class="caption">
+						<h3>{{this.promptString}}</h3>
+						<p>~{{this.speaker}}</p>
+					</div>
+			</div>
+		</div>
+		{{/each}}
+	
+	</div> <!-- end row -->
+
+
+</div>
+
+
+<script src="/javascripts/videos.js"></script>

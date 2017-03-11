@@ -1,0 +1,15 @@
+
+
+<h1>{{promptString}}</h1>
+<p>{{date}}</p>
+
+<div class="row">
+
+	{{#each this.videos}}
+		<div class="col-md-3">
+			{{> videoPartial }}
+		</div>
+	{{/each}}
+
+</div>
+
