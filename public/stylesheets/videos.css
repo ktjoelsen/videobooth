@@ -1,9 +1,8 @@
-
+/*/*
 
 /* Videos page*/
 
 .problem-pitch {
-  padding: 1em 6em;
   margin-bottom: 3em;
   height: 450px;
   position: relative;
@@ -11,48 +10,39 @@
 
 
 #problem-pitch-overlay  {
-  position: absolute;
-  
+  position: absolute
   left: 0;
   top: 0;
   overflow: none;
   height: 100%;
   width: 100%;
   overflow: hidden;
-  
 }
 
 
 
 video#videosvideo {
     transition: 1s opacity;
+    
     width: 125%;
 }
 .stopfade { opacity: .5; }
 
-video { 
+
+video {
   display: block; 
 }
 
 
 
 
-#problem-pitch-text {
-  position: absolute;
-  margin-left: 3%;
-  top: 12%;
-  z-index: 1;
-}
-
-
-
-
 
 #problem-pitch-text {
   position: absolute;
-  margin-left: 3%;
+  margin-left: 13%;
   top: 12%;
   z-index: 1;
+  color: white;
 }
 
 
@@ -134,3 +124,4 @@ video {
     height: 100%;
 }
 
+*/*/
