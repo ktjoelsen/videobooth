@@ -172,6 +172,11 @@ span#nav {
   opacity: 0.5;
 }
 
+.instructions-lead {
+  font-weight: bold;
+  color: black;
+}
+
 /* size iframe according to parent*/
 .video-container {
     position: relative;
