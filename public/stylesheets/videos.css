@@ -1,0 +1,127 @@
+/*/*
+
+/* Videos page*/
+
+.problem-pitch {
+  margin-bottom: 3em;
+  height: 450px;
+  position: relative;
+}
+
+
+#problem-pitch-overlay  {
+  position: absolute
+  left: 0;
+  top: 0;
+  overflow: none;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+video#videosvideo {
+    transition: 1s opacity;
+    
+    width: 125%;
+}
+.stopfade { opacity: .5; }
+
+
+video {
+  display: block; 
+}
+
+
+
+
+
+#problem-pitch-text {
+  position: absolute;
+  margin-left: 13%;
+  top: 12%;
+  z-index: 1;
+  color: white;
+}
+
+
+#problem-pitch-text a {
+  text-decoration: none;
+}
+#problem-pitch-text .btn:hover {
+  opacity: 0.7;
+}
+
+#problem-pitch-text .btn p {
+  margin-bottom: 0;
+}
+
+
+
+.thumbnail {
+  border: none!important;
+  border-radius: 0!important;
+
+}
+
+.video-panel-container {
+  padding-left: 30px!important;
+  padding-right: 30px!important;
+}
+
+.video-panel {
+  margin-bottom: 3em!important;
+  padding: 0!important;
+  border-bottom: 1px solid!important;
+  border-color: red!important;
+}
+
+.video-panel h3 {
+  margin-top: 0;
+  font-size: 14pt;
+}
+
+.video-panel img:hover {
+  opacity: 0.7;
+}
+
+
+.center-btn {
+  text-align: center;
+}
+
+
+#instructions .btn {
+  background-color: gray;
+  margin: 1em auto;
+  color: white;
+}
+
+#instructions .btn:hover {
+  opacity: 0.5;
+}
+
+.instructions-lead {
+  font-weight: bold;
+  color: black;
+}
+
+/* size iframe according to parent
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+*/*/
