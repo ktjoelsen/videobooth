@@ -4,7 +4,7 @@
 
 .problem-pitch {
   margin-bottom: 3em;
-  height: 450px;
+  height: 400px;
   position: relative;
 }
 
@@ -37,27 +37,20 @@ video {
 
 
 
-
 #problem-pitch-text {
   position: absolute;
   margin-left: 13%;
+  width: 80%;
   top: 12%;
   z-index: 1;
   color: white;
 }
 
 
-#problem-pitch-text a {
-  text-decoration: none;
-}
-#problem-pitch-text .btn:hover {
-  opacity: 0.7;
-}
 
-#problem-pitch-text .btn p {
-  margin-bottom: 0;
+#problem-pitch-text h1 {
+  font-size: 50pt;
 }
-
 
 
 .thumbnail {
@@ -125,4 +118,30 @@ video {
     height: 100%;
 }
 
-*/*/
+
+*/
+
+/* making responsive */
+@media (min-width: 700px) and (max-width: 1240px) {
+  #problem-pitch-text h1{
+    font-size: 40pt;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  #problem-pitch-text h1 {
+    font-size: 26pt;
+  }
+  #problem-pitch-text h2 {
+    font-size: 20pt;
+  }
+}
+
+@media (max-width: 500px) {
+  #problem-pitch-text h1 {
+    font-size: 16pt;
+  }
+  #problem-pitch-text h2 {
+    font-size: 14pt;
+  }
+}

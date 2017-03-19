@@ -30,8 +30,15 @@ h3 {
 
 /* Used for About page, Single video*/
 .narrow-page-container {
-  width: 50%;
-  margin: 0 auto;
+  width: 55%;
+  margin: 2em auto;
+  background-color: white;
+  padding: 3em;
+}
+
+
+.narrow-page-container h2 {
+  text-align: center;
 }
 
 
@@ -90,7 +97,6 @@ body .navbar-custom {
 /** landng page */
 
 video#bgvid {
->>>>>>> 3105e61d82ba270101e7a99855829a4fd34fabdb
     position: fixed;
     top: 50%;
     left: 50%;
@@ -198,18 +204,9 @@ a#videos-link:hover{
 
 
 /* ABOUT page */
-.about-page {
-  margin-top: 2em;
-  padding: 2em;
-  /*background-color: rgba(51, 218, 162, 0.26);  */
-}
 
-.about-page h2 {
-  text-align: center;
-}
 
 .about-page hr {
-  /*background-color: white;*/
   height: 3px;
 }
 
