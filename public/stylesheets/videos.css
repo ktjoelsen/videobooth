@@ -17,20 +17,21 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
+  /*margin-top:-51px!important; */   /*overlays navbar on top of video*/
+
 }
 
 
 
 video#videosvideo {
     transition: 1s opacity;
-    
     width: 125%;
 }
 .stopfade { opacity: .5; }
 
 
 video {
-  display: block; 
+  display: block;
 }
 
 
@@ -74,7 +75,7 @@ video {
   margin-bottom: 3em!important;
   padding: 0!important;
   border-bottom: 1px solid!important;
-  border-color: red!important;
+  border-color: white!important;
 }
 
 .video-panel h3 {
