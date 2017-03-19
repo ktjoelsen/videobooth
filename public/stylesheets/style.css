@@ -73,131 +73,14 @@ span#nav {
   width: auto;
 }
 
-/* Videos page*/
-
-.problem-pitch {
-  padding: 1em 6em;
-  margin-bottom: 3em;
-  color: white;
-  background-image: url('../images/lobby7_blur3.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 250px;
-
-  position: relative;
-  /*-webkit-filter: contrast(110%) brightness(60%) saturate(130%);*/
-  /*filter: contrast(110%) brightness(60%) saturate(130%);*/
-}
 
 
-.problem-pitch p {
-  font-family: 'Muli', sans-serif;
-  font-size: 15pt;
-}
-
-#problem-pitch-overlay {
-  position: absolute;
-  background-color: black;
-  opacity: 0.1;
-  left: 0;
-  top: 0;
-  /*bottom: 20px;*/
-  overflow: none;
-  height: 100%;
-  width: 100%;
-}
-
-#problem-pitch-text {
-  color: #fff;
-  position: absolute;
-  margin-left: 3%;
-  top: 12%;
-  /*height: 100%;*/
-  z-index: 1;
-}
-
-#problem-pitch-text a {
-  text-decoration: none;
-}
-#problem-pitch-text .btn:hover {
-  opacity: 0.7;
-}
-
-#problem-pitch-text .btn p {
-  margin-bottom: 0;
-}
-
-.thumbnail {
-  border: none!important;
-  border-radius: 0!important;
-
-}
-
-.video-panel-container {
-  padding-left: 30px!important;
-  padding-right: 30px!important;
-}
-
-.video-panel {
-  margin-bottom: 3em!important;
-  padding: 0!important;
-  border-bottom: 1px solid!important;
-  border-color: red!important;
-}
-
-.video-panel h3 {
-  margin-top: 0;
-  font-size: 14pt;
-}
-
-.video-panel img:hover {
-  opacity: 0.7;
-}
-
-
-.center-btn {
-  text-align: center;
-}
-
-
-#instructions .btn {
-  background-color: gray;
-  margin: 1em auto;
-  color: white;
-}
-
-#instructions .btn:hover {
-  opacity: 0.5;
-}
-
-.instructions-lead {
-  font-weight: bold;
-  color: black;
-}
-
-/* size iframe according to parent*/
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 35px;
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 
 
 
 /** landng page */
+
 
 
 
@@ -214,15 +97,14 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    /*-webkit-filter: grayscale(90%);*/
-    /*-webkit-filter: blur(10px);*/
-    /*-moz-filter: blur(10px);*/
-    /*-o-filter: blur(10px);*/
-    /*-ms-filter: blur(10px);*/
+    -webkit-filter: grayscale(90%);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
     -webkit-filter: contrast(110%) brightness(70%) saturate(130%);
     filter: contrast(110%) brightness(70%) saturate(130%) blur(3px);
     background: url(../images/mit.png) no-repeat;
-    background-size: cover; 
 
 }
 
@@ -233,7 +115,7 @@ video#bgvid {
 }
 .stopfade { opacity: .5; }
 
-video { 
+video#bgvid { 
   display: block; 
 }
 
@@ -298,48 +180,12 @@ a#videos-link:hover{
 
 }
 
-/*.content:before {
-  content: '';
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}*/
-
-/*.filter {
-  position: relative;
-  -webkit-filter: contrast(110%) brightness(110%) saturate(130%);
-  filter: contrast(110%) brightness(110%) saturate(130%);
-}
-.filter::before {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  pointer-events: none;
-  mix-blend-mode: screen;
-  background: rgba(243, 106, 188, 0.5);
-}
 */
 @media (min-width: 1200px) {
   .thumbnail.video-panel {
       min-height: 368px!important;
   }
 }
-
-
-/*@media (min-width: 992px) and (max-width: 1200px){
-  .thumbnail.video-panel {
-      min-height: 317px!important;
-  }
-}*/
-
 
 
 
