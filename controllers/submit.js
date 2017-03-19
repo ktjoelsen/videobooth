@@ -11,9 +11,36 @@ var Video = require('../models/videomodel');
  */
 
  router.get('/', function(req, res, next) {
-    res.render('submit', {
-        title: 'We are MIT'
-    });
+
+      Video.find({}).sort({date: 'desc'}).exec(function (err, videos) {
+
+        // handle error
+        if (err) return console.error(err);
+
+        // iterate over videos to get all unique questions
+        var questions = [];
+        for (var i = 0; i < videos.length; i++) {
+            var video = videos[i];
+            console.log(video);
+
+            if (questions.indexOf(video.promptString)) {
+                questions.push(video.promptString);
+            };
+            if (video.newQuestion != null) {
+              if (questions.indexOf(video.newQuestion) == -1) {
+                questions.push(video.newQuestion);
+              };
+            };
+
+        }
+        console.log(questions);
+        
+        res.render('submit', {
+          title: 'We are MIT',
+          questions: questions
+        });
+      });
+
 });
 
 
@@ -51,6 +78,7 @@ var getYouTubeID = function(youtubeLink) {
     var id = array[array.length - 1];
     return id;
 };
+
 
 
 module.exports = router;
