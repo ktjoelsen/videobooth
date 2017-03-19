@@ -29,7 +29,7 @@ var app = express();
 
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MLAB_URI);
+mongoose.connect(process.env.PROD_MONGODB);
 mongoose.connection.on('error', () => {
   console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'));
   process.exit();
