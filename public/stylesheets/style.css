@@ -132,8 +132,7 @@ span#nav {
 .thumbnail {
   border: none!important;
   border-radius: 0!important;
-  
- 
+
 }
 
 .video-panel-container {
@@ -146,8 +145,6 @@ span#nav {
   padding: 0!important;
   border-bottom: 1px solid!important;
   border-color: red!important;
-  /*box-shadow: none!important;*/
-  /*border-radius: 0!important;*/
 }
 
 .video-panel h3 {
@@ -159,6 +156,22 @@ span#nav {
   opacity: 0.7;
 }
 
+
+.center-btn {
+  text-align: center;
+}
+
+
+#instructions .btn {
+  background-color: gray;
+  margin: 1em auto;
+  color: white;
+}
+
+#instructions .btn:hover {
+  opacity: 0.5;
+}
+
 /* size iframe according to parent*/
 .video-container {
     position: relative;
@@ -167,6 +180,7 @@ span#nav {
     height: 0;
     overflow: hidden;
 }
+
 .video-container iframe {
     position: absolute;
     top:0;
