@@ -1,6 +1,9 @@
 body {
   padding-top: 50px;
-  background-color: #ececec !important;
+  /*background-color: #ececec !important;*/
+  background-color: #ffffff !important;
+  background-image: url("https://www.transparenttextures.com/patterns/binding-light.png") !important;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 a {
@@ -79,8 +82,8 @@ span#nav {
   color: rgb(30,30,30);
 }
 body .navbar-custom {
-  background-color: #868686;
-  opacity: 0.75;
+  background-color: #0a1175;
+  opacity: 0.65;
 }
 
 
@@ -94,7 +97,6 @@ body .navbar-custom {
 /** landng page */
 
 video#bgvid {
->>>>>>> 3105e61d82ba270101e7a99855829a4fd34fabdb
     position: fixed;
     top: 50%;
     left: 50%;
