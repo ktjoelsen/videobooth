@@ -41,6 +41,11 @@ h3 {
   text-align: center;
 }
 
+.video-container iframe {
+  height: 400px;
+  width: 100%;
+
+}
 
 /*  NAVBAR  */
 h1#navbar-title {
@@ -213,5 +218,5 @@ a#videos-link:hover{
 .narrow-hr {
   width: 5em;
   height: 10px;
-  background-color: rgb(159,1,17);
+  background-color: #0a1175;
 }
