@@ -24,17 +24,14 @@ fs.readFile('.credentials.json', function processCredentials(err, content) {
   credentials = JSON.parse(content);
   // provess.env.MLAB_URI = credentials.MLAB_URI
 
+  mongoose.Promise = global.Promise;
+  mongoose.connect(credentials.MLAB_URI);
+  mongoose.connection.on('error', () => {
+    console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'));
+    process.exit();
+  });
 
 });
-
-
-// mongoose.Promise = global.Promise;
-// mongoose.connect(process.env.PROD_MONGODB);
-// mongoose.connection.on('error', () => {
-//   console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'));
-//   process.exit();
-// });
-
 /**
  * Express configuration.
  */
