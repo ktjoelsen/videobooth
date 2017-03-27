@@ -2,7 +2,7 @@
 
 /* Videos page*/
 
-.problem-pitch {
+.problem-pitch {/*padding-top: 3em;*/
   margin-bottom: 3em;
   height: 400px;
   position: relative;
@@ -18,7 +18,6 @@
   width: 100%;
   overflow: hidden;
   /*margin-top:-51px!important; */   /*overlays navbar on top of video*/
-
 }
 
 
@@ -46,12 +45,30 @@ video {
   color: white;
 }
 
+.questionSlideShow {
+  margin-top: 3em;
+  text-align: center;
+}
 
-
-#problem-pitch-text h1 {
+.questionSlideShow h1 {
   font-size: 50pt;
 }
 
+
+#header-respond-btn {
+  color: black;
+  padding: 1em;
+  margin: 1em auto;
+  text-align: center;
+}
+
+
+#header-respond-btn a {
+  background-color: white;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+}
 
 .thumbnail {
   border: none!important;
