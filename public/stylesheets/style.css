@@ -1,5 +1,5 @@
 body {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   /*background-color: #ececec !important;*/
   background-color: #ffffff !important;
   background-image: url("https://www.transparenttextures.com/patterns/binding-light.png") !important;
@@ -31,9 +31,10 @@ h3 {
 /* Used for About page, Single video*/
 .narrow-page-container {
   width: 55%;
-  margin: 2em auto;
+  margin: 5em auto;
   background-color: white;
   padding: 3em;
+
 }
 
 
@@ -49,53 +50,30 @@ h3 {
 
 /*  NAVBAR  */
 h1#navbar-title {
-  /*color: rgb(159,1,17);*/
   color: white;
   font-family:'Lobster';
-  /*font-family:'Chalkduster';*/
-  /*font-family: 'Roboto';*/
   font-weight: 500;
   font-size: 1.5em;
   opacity: .8;
   text-align: center;
   letter-spacing: .04em;
   margin-top: -.12em;
-  /*margin-bottom: 1em;*/
   padding:0;
 }
 
-span#nav {
-  color: rgb(30,30,30);
-  padding: 1.2%;
-}
-
-.navbar {
-  background: rgba(255,255,255,.9);
-}
-
-
-
 .navbar-nav > li > a {
-  color: #E5E5E5!important;
+  color: #fff!important;
   font-family: 'Roboto', sans-serif!important;
   text-shadow: none!important;
   font-size: 16px;
-
 }
 
-.navbar-default {
-  color: rgb(30,30,30);
-}
-body .navbar-custom {
-  background-color: #0a1175;
-  opacity: 0.65;
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: transparent!important;
+  color: black!important;
 }
 
 
-.navbar-brand img {
-  height: 100%;;
-  width: auto;
-}
 
 
 
