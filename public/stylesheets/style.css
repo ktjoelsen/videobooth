@@ -124,9 +124,9 @@ video#bgvid {
 }
 
 h1#title {
-  color: rgb(159,1,17);
-  font-family:'Chalkduster';
-  /*font-family: 'Roboto';*/
+  margin-top: 1em;
+  color: white;
+  font-family:'Lobster';
   font-weight: 500;
   font-size: 9em;
   opacity: .8;
@@ -134,10 +134,7 @@ h1#title {
   letter-spacing: .04em;
 }
 
-span {
-  color: white;
-  padding: 1.2%;
-}
+
 
 button#vidpause {
     background-color: Transparent;
