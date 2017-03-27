@@ -25,13 +25,12 @@ var Video = require('../models/videomodel');
 
         for (var i = 0; i < videos.length; i++) {
             var video = videos[i];
-            console.log(video);
 
-            if (questions.indexOf(video.promptString) == -1) {
+            if (questions.indexOf(video.promptString) == -1 && video.promptString != "") {
                 questions.push(video.promptString);
             };
             if (video.newQuestion != null) {
-              if (questions.indexOf(video.newQuestion) == -1) {
+              if (questions.indexOf(video.newQuestion) == -1 && video.newQuestion != "") {
                 questions.push(video.newQuestion);
               };
             };
