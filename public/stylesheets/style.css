@@ -179,8 +179,10 @@ a#videos-link:hover{
   }
 }
 
-
-
+/* SUBMIT page */
+.control-label {
+  font-weight: normal;
+}
 
 
 /* ABOUT page */

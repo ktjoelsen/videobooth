@@ -18,12 +18,16 @@ var Video = require('../models/videomodel');
         if (err) return console.error(err);
 
         // iterate over videos to get all unique questions
-        var questions = [];
+        var questions = [
+            "What is your favorite MIT class and why?",
+            "What advice would you give to incoming freshmen?"
+        ];
+
         for (var i = 0; i < videos.length; i++) {
             var video = videos[i];
             console.log(video);
 
-            if (questions.indexOf(video.promptString)) {
+            if (questions.indexOf(video.promptString) == -1) {
                 questions.push(video.promptString);
             };
             if (video.newQuestion != null) {
@@ -31,9 +35,8 @@ var Video = require('../models/videomodel');
                 questions.push(video.newQuestion);
               };
             };
-
         }
-        console.log(questions);
+        
         
         res.render('submit', {
           title: 'We are MIT',
