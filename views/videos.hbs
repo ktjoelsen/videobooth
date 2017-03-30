@@ -6,23 +6,26 @@
 
 <div class="problem-pitch">
 	<div id="problem-pitch-overlay">
-		<video playsinline autoplay muted loop poster="../public/images/mit.png" id="videosvideo">
-	  	<source src="../public/images/homepage-video.mp4" type="video/mp4">
+		<video id="grassvideo" playsinline autoplay muted loop poster="../public/images/grass.png" id="videosvideo">
+	  	<source src="../public/images/grass.mp4" type="video/mp4">
 		</video>
 	</div>
 
-	<div id="problem-pitch-text">
-	  <div class="questionSlideShow">
+	<div id="problem-pitch-text" class="text-center">
+		<h1>What is your favorite <br>MIT class and why?</h1>
+
+		<h3>Share your answer in a 30-second answer to win best video or lottery prizes!</h3>
+<!-- 	  <div class="questionSlideShow">
 	    <h1>What is your favorite MIT class <br>and why?</h1>
 	  </div>
 
-<!-- 	  <div class="questionSlideShow">
+	  <div class="questionSlideShow">
 	    <h1>What is the worst MIT policy?</h1>
-	  </div> -->
+	  </div>
 
 	  <div class="questionSlideShow">
 	    <h1>What advice would you give to incoming freshmen?</h1>
-	  </div>
+	  </div> -->
 
 
 	  <div id="header-respond-btn">
@@ -39,28 +42,54 @@
 
 
 
-<div class="container">
 
+<div class="container">
 
 	<div class="row">
 
-		<div class="col-md-4 sm-6 video-panel-container">
-			<div id="instructions" class="thumbnail video-panel">
+		<div id="instructions">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="white-bg instruction-panel dynamic">
+						<p id="instruction-lead">MIT MindHandHeart asks:</p>
+						<h2 class="zero-top-margin">What is your favorite MIT class and why?</h2>
+						
+						<h4>Guidelines</h4>
+						<p>Respond in a video of 30 seconds or less</p>
+						<p>Bonus points for doing it as a pair or a team</p>
+						<p>Start by introducing yourself within the first 5 seconds</p>
+						<p>Include a stuffed animal and an MIT building</p>
+						<br>
 
-				<div class="center-btn">
-					<a href="/submit" class="btn">JOIN</a>
+						<p>Then upload your video to YouTube as "unlisted" or "public", and <a href="/submit">submit your response here</a>.</p>
+
+					</div>
+
 				</div>
-				<div class="caption">
-					<ol>
-						<li><p><span class="instructions-lead">Pick the question you want to answer. </span> You are interesting, and your answer lets other people learn about you and reach out to you directly.</p></li>
-						<li><p><span class="instructions-lead">Respond with a 60-second video!</span> Do it with a friend, alone, or with your cat. It's low-key and fun!</p></li>
-						<li><p><span class="instructions-lead">Upload it to YouTube as unlisted/public.</span> Submit it here on the platform.</p></li>
-						<li><p><span class="instructions-lead">Add your own new question.</span> What do you want to learn about?</p></li>
-					</ol>
+
+				<div class="col-md-5">
+					<div class="white-bg instruction-panel static">
+						<h2>Respond to win prizes!</h2>
+						<p>1st place: $300 <br>
+							2nd place: $150.</p>
+						<p>All participants enter to win lottery for three $50 techcash prizes</p>
+						<p>And all participants receive cute "We Are MIT" laptop stickers!</p>
+						<div class="center-btn">
+							<a href="/submit" class="btn">JOIN</a>
+						</div>		
+					</div>
 				</div>
 			</div>
 
+		
+					
 		</div>
+
+
+		
+	</div>
+
+	<div class="row">
 
 
 		{{#each videos}}

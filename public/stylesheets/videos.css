@@ -3,9 +3,10 @@
 /* Videos page*/
 
 .problem-pitch {/*padding-top: 3em;*/
-  margin-bottom: 3em;
+  
   height: 400px;
   position: relative;
+  margin-bottom: 3em;
 }
 
 
@@ -17,7 +18,7 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
-  /*margin-top:-51px!important; */   /*overlays navbar on top of video*/
+  /*margin-top:-51px!important;    overlays navbar on top of video*/
 }
 
 
@@ -33,8 +34,19 @@ video {
   display: block;
 }
 
+video#grassvideo {
+  /*filter: brightness(70%) saturate(130%);*/
+
+}
 
 
+#video-description {
+  background-color: white;
+  padding: 2em;
+  margin-bottom: 2em;
+
+
+}
 
 #problem-pitch-text {
   position: absolute;
@@ -45,7 +57,14 @@ video {
   color: white;
   /*font-family: 'Roboto';*/
   /*text-transform: uppercase;*/
+
 }
+
+#problem-pitch-text h1 {
+  font-size: 60pt;
+  text-align: center;
+}
+
 
 .questionSlideShow {
   margin-top: 3em;
@@ -116,9 +135,27 @@ video {
   opacity: 0.5;
 }
 
-.instructions-lead {
-  font-weight: bold;
-  color: black;
+#instructions {
+  margin: 0 2em 2em 2em;
+}
+
+#instruction-lead {
+  color: gray;
+  margin-bottom: 0em;
+}
+
+.instruction-panel {
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+
+.white-bg {
+  background-color: white;
+}
+
+.zero-top-margin {
+  margin-top: 0;
 }
 
 /* size iframe according to parent
