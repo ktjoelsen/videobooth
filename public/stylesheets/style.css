@@ -11,14 +11,23 @@ a {
 }
 
 p {
-  /*font-family: 'Muli', sans-serif;*/
+  font-family: 'Garamond', serif;
 }
 
 h2,
 h3 {
   font-family: 'Karla', sans-serif;
 }
+h3 {
+  font-size: 10pt;
+}
 
+.purple-hr {
+  height: 3px;
+  background-color: purple;
+  width: 20%;
+
+}
 
 
 /* Page widths */
