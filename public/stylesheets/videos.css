@@ -2,11 +2,9 @@
 
 /* Videos page*/
 
-.problem-pitch {/*padding-top: 3em;*/
-  
+.problem-pitch {
   height: 400px;
   position: relative;
-  margin-bottom: 3em;
 }
 
 
@@ -35,7 +33,9 @@ video {
 }
 
 video#grassvideo {
-  /*filter: brightness(70%) saturate(130%);*/
+  /*filter: saturate(20%) brightness(120%);*/
+  /*filter: brightness(120%) saturate(130%);*/
+  filter: saturate(120%) blur(5px) hue-rotate(20deg);
 
 }
 
@@ -55,9 +55,6 @@ video#grassvideo {
   top: 12%;
   z-index: 1;
   color: white;
-  /*font-family: 'Roboto';*/
-  /*text-transform: uppercase;*/
-
 }
 
 #problem-pitch-text h1 {
@@ -76,25 +73,55 @@ video#grassvideo {
 }
 
 
-#header-respond-btn {
+.purple-btn {
   color: black;
   padding: 1em;
   margin: 1em auto;
   text-align: center;
+  font-family: 'Roboto';
+  font-size: 16pt;
 }
 
 
-#header-respond-btn a {
-  background-color: white;
-  padding: 1em;
+.purple-btn a {
+  padding: 0.5em;
   text-align: center;
   text-decoration: none;
+  color: white;
+  background-color: #590059;
 }
+
+.purple-btn a:hover {
+  border: 3px #8d008d solid;
+  background-color: #8d008d;
+  text-decoration: none;
+  color: white;
+}
+
+
+#instructions-respond-btn {
+  font-size: 12pt;
+}
+
+#instructions {
+  padding: 2em 5em;
+  margin-bottom: 3em;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.zero-top-margin {
+  margin-top: 0;
+}
+
+
+
 
 .thumbnail {
   border: none!important;
   border-radius: 0!important;
-
 }
 
 .video-panel-container {
@@ -110,9 +137,9 @@ video#grassvideo {
   height: 350px;
 }
 
-.video-panel h3 {
+.video-panel h4 {
   margin-top: 0;
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 .video-panel img:hover {
@@ -125,55 +152,8 @@ video#grassvideo {
 }
 
 
-#instructions .btn {
-  background-color: gray;
-  margin: 1em auto;
-  color: white;
-}
-
-#instructions .btn:hover {
-  opacity: 0.5;
-}
-
-#instructions {
-  margin: 0 2em 2em 2em;
-}
-
-#instruction-lead {
-  color: gray;
-  margin-bottom: 0em;
-}
-
-.instruction-panel {
-  padding: 2em;
-  margin-bottom: 2em;
-}
 
 
-.white-bg {
-  background-color: white;
-}
-
-.zero-top-margin {
-  margin-top: 0;
-}
-
-/* size iframe according to parent
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 35px;
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 
 */
