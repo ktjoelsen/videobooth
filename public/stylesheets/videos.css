@@ -3,8 +3,9 @@
 /* Videos page*/
 
 .problem-pitch {
-  height: 400px;
+  height: 500px;
   position: relative;
+  top: -52px;
 }
 
 
@@ -16,61 +17,32 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
-  /*margin-top:-51px!important;    overlays navbar on top of video*/
 }
 
 
 
-video#videosvideo {
-    transition: 1s opacity;
-    width: 125%;
-}
-.stopfade { opacity: .5; }
-
-
-video {
+video#grassvideo {
+  filter: saturate(120%) blur(5px) hue-rotate(20deg);
   display: block;
 }
 
-video#grassvideo {
-  /*filter: saturate(20%) brightness(120%);*/
-  /*filter: brightness(120%) saturate(130%);*/
-  filter: saturate(120%) blur(5px) hue-rotate(20deg);
 
-}
-
-
-#video-description {
-  background-color: white;
-  padding: 2em;
-  margin-bottom: 2em;
-
-
-}
 
 #problem-pitch-text {
   position: absolute;
   margin-left: 13%;
   width: 80%;
-  top: 12%;
+  top: 18%;
   z-index: 1;
   color: white;
 }
 
-#problem-pitch-text h1 {
+
+#problem-pitch-text h2 {
   font-size: 60pt;
   text-align: center;
 }
 
-
-.questionSlideShow {
-  margin-top: 3em;
-  text-align: center;
-}
-
-.questionSlideShow h1 {
-  font-size: 50pt;
-}
 
 
 .purple-btn {
@@ -99,14 +71,18 @@ video#grassvideo {
 }
 
 
+#instructions {
+  position: relative;
+  top: -52px;
+  padding: 2em 5em;
+  margin-bottom: 3em;
+}
+
+
 #instructions-respond-btn {
   font-size: 12pt;
 }
 
-#instructions {
-  padding: 2em 5em;
-  margin-bottom: 3em;
-}
 
 .white-bg {
   background-color: white;
