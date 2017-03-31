@@ -9,7 +9,8 @@ const videoSchema = new mongoose.Schema({
   promptString: String,
   date: Date,
   upvotes: Number,
-  newQuestion: String
+  newQuestion: String,
+  tweetSummary: String
 });
 
 

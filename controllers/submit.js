@@ -61,7 +61,9 @@ var Video = require('../models/videomodel');
         date: body.recordingDate,
         mitAffiliation: body.mitAffiliation,
         mitCourse: body.mitCourse,
-        newQuestion: body.newQuestion
+        newQuestion: body.newQuestion,
+        tweetSummary: body.tweetSummary
+        
     });
     video.save(function(err) {
         if (err) console.log(err)
