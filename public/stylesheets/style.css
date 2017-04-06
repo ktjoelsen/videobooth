@@ -57,20 +57,21 @@ h3 {
   left: 0;
   margin-bottom: 0!important;
   z-index: 1;
+
 }
 
 
-h1#navbar-title {
+/*h1#navbar-title {
   color: white;
   font-family:'Lobster';
   font-weight: 500;
   font-size: 1.5em;
-  opacity: .8;
   text-align: center;
   letter-spacing: .04em;
   margin-top: -.12em;
   padding:0;
-}
+  z-index: 2;
+}*/
 
 h1#navbar-title:hover {
   color: black;
@@ -80,12 +81,21 @@ h1#navbar-title:hover {
   color: #fff!important;
   font-family: 'Roboto', sans-serif!important;
   text-shadow: none!important;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
   background-color: transparent!important;
   color: black!important;
+}
+
+.navbar .img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
 }
 
 
