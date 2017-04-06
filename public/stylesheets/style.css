@@ -9,6 +9,7 @@ a {
 
 p, li {
   font-family: 'Garamond', serif;
+  font-size: 14pt;
 }
 
 
@@ -124,7 +125,7 @@ video#bgvid {
     /*-ms-filter: blur(10px);*/
     /*-webkit-filter: contrast(110%) brightness(70%) saturate(130%);*/
     /*filter: contrast(110%) brightness(70%) saturate(130%) blur(3px);*/
-    filter: contrast(110%) brightness(70%) saturate(130%) blur(10px);
+    filter: contrast(110%) brightness(70%) saturate(130%) ;
     background-size: cover;
 }
 
@@ -159,7 +160,20 @@ h1#title {
   letter-spacing: .04em;
 }
 
+#landing-page-container {
+  position: relative;
+}
+
+#landing-page-overlay {
+  position: relative;
+  background-color: black;
+  opacity: 0.5;
+}
+
 #landing-page-text {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
   color: white;
   font-family: 'Roboto';
 }
@@ -187,7 +201,6 @@ a#videos-link {
   display:table;
   margin: auto;
   font-family: 'Roboto';
-  margin-top: 4%;
   border: 2px solid white ;
   padding-right: .3em;
   padding-left: .3em;
