@@ -3,7 +3,7 @@
 /* Videos page*/
 
 .problem-pitch {
-  height: 450px;
+  height: 500px;
   position: relative;
   top: -52px;
 }
@@ -108,7 +108,7 @@ video#grassvideo {
 }
 
 #wearemitsticker {
-  height: 100px;
+  height: 200px;
 }
 
 .white-bg {
@@ -162,26 +162,36 @@ video#grassvideo {
 */
 
 /* making responsive */
-@media (min-width: 700px) and (max-width: 1240px) {
-  #problem-pitch-text h1{
+@media (min-width: 990px) and (max-width: 1240px) {
+  #problem-pitch-text h2 {
     font-size: 40pt;
   }
 }
 
+@media (min-width: 700px) and (max-width: 990px) {
+  #problem-pitch-text h2 {
+    font-size: 30pt;
+  }
+
+  #problem-pitch-text h3 {
+    font-size: 18pt;
+  }
+}
+
 @media (min-width: 500px) and (max-width: 700px) {
-  #problem-pitch-text h1 {
+  #problem-pitch-text h2 {
     font-size: 26pt;
   }
-  #problem-pitch-text h2 {
-    font-size: 20pt;
+  #problem-pitch-text h3 {
+    font-size: 16pt;
   }
 }
 
 @media (max-width: 500px) {
-  #problem-pitch-text h1 {
-    font-size: 16pt;
-  }
   #problem-pitch-text h2 {
+    font-size: 20pt;
+  }
+  #problem-pitch-text h3 {
     font-size: 14pt;
   }
 }
