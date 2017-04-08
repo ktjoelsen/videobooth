@@ -1,43 +1,35 @@
-/*/*
 
 /* Videos page*/
 
-.problem-pitch {
+.videoContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  width: 100vw;
   height: 500px;
-  position: relative;
-  top: -52px;
+  display: block;
+  overflow: hidden;
 }
-
 
 #problem-pitch-overlay  {
-  position: absolute
+  position: relative;
   left: 0;
   top: 0;
-  overflow: none;
-  height: 100%;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
-  /*background: url('../images/mit_fall.png');*/
-  /*background-size: cover;*/
 }
-
-
-
-
-
-
 
 video#grassvideo {
   filter: saturate(120%) hue-rotate(20deg);
-  display: block;
+  /*display: block;*/
 }
 
-
-
 #problem-pitch-text {
-  position: absolute;
-  margin-left: 13%;
-  width: 80%;
+  position: relative;
+  margin: auto;
+  width: 100%;
   top: 24%;
   z-index: 1;
   color: white;
@@ -48,7 +40,7 @@ video#grassvideo {
 .dark-bg {
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
-  padding: 10px;   
+  padding: 10px;
 }
 
 
@@ -76,6 +68,7 @@ video#grassvideo {
 
 
 .purple-btn a {
+  border-radius: 10px;
   padding: 0.5em;
   text-align: center;
   text-decoration: none;
@@ -90,15 +83,15 @@ video#grassvideo {
   color: white;
 }
 
-
+/*
 #instructions {
   position: relative;
   top: -52px;
   padding: 2em 5em;
   margin-bottom: 3em;
-}
+}*/
 
-
+/*
 #instructions-respond-btn {
   font-size: 16pt;
 }
@@ -109,19 +102,19 @@ video#grassvideo {
 
 #wearemitsticker {
   height: 200px;
-}
+}*/
 
-.white-bg {
+/*.white-bg {
   background-color: white;
 }
 
 .zero-top-margin {
   margin-top: 0;
-}
+}*/
 
 
 
-
+/*
 .thumbnail {
   border: none!important;
   border-radius: 0!important;
@@ -138,8 +131,8 @@ video#grassvideo {
   border-bottom: 1px solid!important;
   border-color: white!important;
   height: 350px;
-}
-
+}*/
+/*
 .video-panel h4 {
   margin-top: 0;
   font-size: 12pt;
@@ -152,7 +145,7 @@ video#grassvideo {
 
 .center-btn {
   text-align: center;
-}
+}*/
 
 
 
