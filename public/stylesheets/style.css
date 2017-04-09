@@ -150,32 +150,34 @@ video#bgvid {
 }
 
 h1#title {
-  margin-top: 1em;
   color: white;
   font-family:'Lobster';
   font-weight: 500;
   font-size: 9em;
-  opacity: .8;
+  /*opacity: .8;*/
   text-align: center;
   letter-spacing: .04em;
 }
 
 #landing-page-container {
   position: relative;
+  margin-top: 10%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
 }
 
-#landing-page-overlay {
-  position: relative;
-  background-color: black;
-  opacity: 0.5;
-}
+
+
 
 #landing-page-text {
-  position: relative;
   margin-right: auto;
   margin-left: auto;
   color: white;
   font-family: 'Roboto';
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3em;
 }
 
 
@@ -206,11 +208,13 @@ a#videos-link {
   padding-left: .3em;
   padding-top: .1em;
   padding-bottom: .1em;
+  margin-top: 1em;
 }
 
 a#videos-link:hover{
     text-decoration: none;
     background: rgba(50,50,50,0.5);
+
 
 }
 

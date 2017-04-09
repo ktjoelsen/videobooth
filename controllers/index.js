@@ -24,6 +24,12 @@ router.get('/about', function(req, res, next) {
 	});
 });
 
+router.get('/start', function(req, res, next) {
+    res.render('start', {
+        title: 'We are MIT'
+    });
+});
+
 
 
 router.get('/ask', function(req, res, next) {

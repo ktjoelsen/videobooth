@@ -83,15 +83,15 @@ video#grassvideo {
   color: white;
 }
 
-/*
+
 #instructions {
   position: relative;
-  top: -52px;
+  top: -7px;
   padding: 2em 5em;
   margin-bottom: 3em;
 }*/
 
-/*
+
 #instructions-respond-btn {
   font-size: 16pt;
 }
@@ -102,19 +102,16 @@ video#grassvideo {
 
 #wearemitsticker {
   height: 200px;
-}*/
+}
 
-/*.white-bg {
+.white-bg {
   background-color: white;
 }
 
 .zero-top-margin {
   margin-top: 0;
-}*/
+}
 
-
-
-/*
 .thumbnail {
   border: none!important;
   border-radius: 0!important;
@@ -131,8 +128,8 @@ video#grassvideo {
   border-bottom: 1px solid!important;
   border-color: white!important;
   height: 350px;
-}*/
-/*
+}
+
 .video-panel h4 {
   margin-top: 0;
   font-size: 12pt;
@@ -145,14 +142,7 @@ video#grassvideo {
 
 .center-btn {
   text-align: center;
-}*/
-
-
-
-
-
-
-*/
+}
 
 /* making responsive */
 @media (min-width: 990px) and (max-width: 1240px) {
