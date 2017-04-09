@@ -1,105 +1,74 @@
-
 {{> navbar}}
-
-
-<div class="problem-pitch">
-
-	<div id="problem-pitch-overlay">
+<div class="container">
+	<!-- looping video here -->
+	<div class="videoContainer">
 		<video id="grassvideo" playsinline autoplay muted loop poster="../public/images/grass.png" id="videosvideo">
 	  	<source src="../public/images/grass.mp4" type="video/mp4">
 		</video>
 	</div>
 
-<!-- 	<div id="problem-pitch-overlay">
-	</div> -->
-
-	<div id="problem-pitch-text">
-		<div class="dark-bg text-center">
-			<h2>What is the one thing that <br>should never change about MIT?</h2>
-			<h3>Share what you think in a 30 second video</h3>
-			<h3>[$$ lottery prizes]</h3>
+	<div class="row" id="problem-pitch-text">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="dark-bg">
+				<h2>What is the one thing that <br>should never change about MIT?</h2>
+				<h3>Share what you think in a 30 second video</h3>
+				<h3>[$$ prizes and laptop stickers]</h3>
+			</div>
+			<div id="header-respond-btn" class="purple-btn">
+				<a href="/submit">Share your thoughts</a>
+			</div>
 		</div>
-	  <div id="header-respond-btn" class="purple-btn">
-			<a href="/submit">Share your thoughts</a>
-		</div>
-
-	 </div>
+		<div class="col-md-2"></div>
 	</div>
 </div>
 
-
-
-
-<div class="row white-bg" id="instructions">
-
+<div class="container-fluid white-bg" id="instructions">
 	<div class="row">
-		
-		<div class="col-md-3">
-			<!-- ignore left -->
-		</div>
-
+		<div class="col-md-3"><!-- ignore left --></div>
 		<div class="col-md-6 text-center">
-			<h2>Look around</h2>
+			<h2>Stronger together</h2>
 			<hr class="purple-hr">
-			<p>We sometimes enter “autopilot” and just go from class to assignment to class.  We have to hit pause sometimes, look and see who’s around, and remember that everyone at MIT has an interesting story.</p>
-			<p><strong>We are MIT</strong> was created so that we can together turn off autopilot, recharge, and explore.</p>
-			<!-- We celebrate diversity, community, and purpose.</p> -->
+			<p>Imagine what we could do if we joined forces?</p>
 
+			<p>MIT labs and departments are overly separated from each other. Sometimes, we get stuck in a rut, cycling between sleep, class, and lab, mostly interacting with people in our own fields. But there is so much we can learn from each other!</p>
+
+			<p>MIT is not just course 6. MIT is not just Sloan. MIT is architecture, political science, music, writing, business, computer science, urban planning, AND so much more. <br>We're all MIT.</p>
+
+			<p><strong>We are MIT was created to showcase MIT students from all around campus and unify our campus</strong>.</p>
+
+
+<!-- 			<p>We sometimes enter “autopilot” and just go from class to assignment to class.  We have to hit pause sometimes, look and see who’s around, and remember that everyone at MIT has an interesting story.</p>
+			<p><strong>We are MIT</strong> was created so that we can together turn off autopilot, recharge, and explore.</p>
+			 -->
 			<br>
 			<h2>Share your story</h2>
 			<hr class="purple-hr">
-			<p>Tell us about the one thing that should never change about MIT:<br>
+			<p>Tell us about the one thing that you think should never change about MIT:<br>
 			1) Respond in a video of 30 seconds or less <br>
-			2) Bonus points for doing it as a pair or a team <br>
-			3) Start by introducing yourself within the first 5 seconds <br>
+			2) You get bonus points if you make the video as a pair or a team <br>
+			3) Use the first 5 seconds of the video to introduce yourself <br>
 			4) Include a stuffed animal and an MIT building</p>
-			
 			<p>Then upload your video to YouTube as "unlisted" or "public", <br>
 				and <a href="/submit"><strong>submit your response here</strong></a>.</p>
-
 			<br>
 			<h2>Prizes</h2>
 			<h2>$100 and $50 gift cards</h2>
 			<hr class="purple-hr">
 			<p>Lottery prizes: <br>One $100 Amazon gift card & three $50 Amazon gift cards!</p>
-			
-			<p>The funniest, most creative, and most heartwarming submissions are selected and highlighted in an edited compilation of submissions.</p>
-			
+
+			<p>The funniest, most creative, and most heartwarming submissions will be selected and highlighted in a featured compilation of submissions.</p>
+
 			<p>And do you want a cute "We Are MIT" laptop sticker?</p>
 			<img src="images/wearemitsticker.png" id="wearemitsticker">
-
 			<br>
-
-
-
 		</div>
-
-		<div class="col-md-3">
-			<!-- ignore right -->
-		</div>
-		
-		
-
+		<div class="col-md-3"><!-- ignore right --></div>
 	</div>
 </div>
-			<!-- </div> -->
-
-				<!-- <div class="col-md-5"> -->
-<!-- 					<div class="white-bg instruction-panel static">
-						<h2 class="zero-top-margin">Respond to win prizes!</h2>
-	
-					</div>
-				</div> -->
-
-
-
-		
-	<!-- </div> -->
 
 <div class="container">
 	<div class="row">
-
-
 		{{#each videos}}
 			<!-- small box panel for each video -->
 			<div class="col-md-4 col-sm-6 video-panel-container">
@@ -108,7 +77,6 @@
 					<a href="/singlevideo/{{this._id}}">
 						{{#embedYoutubeImg}}{{this}}{{/embedYoutubeImg}}
 					</a>
-
 					<!-- information about the video -->
 					<div class="caption">
 						<h4>{{this.promptString}}</h4>
@@ -117,11 +85,7 @@
 			</div>
 		</div>
 		{{/each}}
-
 	</div> <!-- end row -->
-
-
 </div>
-
 
 <script src="/javascripts/videos.js"></script>
