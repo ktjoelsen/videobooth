@@ -13,7 +13,7 @@ router.use('/submit', require('./submit'));
 router.get('/', function(req, res, next) {
 	// all concepts from model
 	// res.render('home', {concepts: concepts});
-	res.render('landing', {
+	res.render('videos', {
 		title: 'We are MIT'
 	});
 });
