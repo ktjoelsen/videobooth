@@ -17,11 +17,35 @@
 				<h3>[$$ prizes and laptop stickers]</h3>
 			</div>
 			<div id="header-respond-btn" class="purple-btn">
-				<a href="/submit">Share your thoughts</a>
+				<a href="/submit">Participate</a>
 			</div>
 		</div>
 		<div class="col-md-2"></div>
 	</div>
+</div>
+
+<div class="container" id="video-preview">
+
+	<div class="row">
+
+		{{#each videos}}
+
+			
+			<div class="col-md-4 col-sm-6 video-panel-container">
+				<div class="thumbnail video-panel">
+					
+					<a href="/singlevideo/{{this._id}}">
+						{{#embedYoutubeImg}}{{this}}{{/embedYoutubeImg}}
+					</a>
+					
+					<div class="caption">
+						<h4>{{this.promptString}}</h4>
+						<p>~{{this.speaker}}</p>
+					</div>
+			</div>
+		</div>
+		{{/each}}
+	</div> 
 </div>
 
 <div class="container-fluid white-bg" id="instructions">
@@ -49,16 +73,16 @@
 <!-- 			<p>We sometimes enter “autopilot” and just go from class to assignment to class.  We have to hit pause sometimes, look and see who’s around, and remember that everyone at MIT has an interesting story.</p>
 			<p><strong>We are MIT</strong> was created so that we can together turn off autopilot, recharge, and explore.</p>
 			 -->
-			<br>
-			<h2>Share your story</h2>
-			<hr class="purple-hr">
-			{{> april_question}}
+			<!-- <br> -->
+			<!-- <h2>Share your story</h2> -->
+			<!-- <hr class="purple-hr"> -->
+			<!-- {{> april_question}} -->
 
-			<p>Then upload your video to your YouTube account. Make sure the video setting is "unlisted" or "public", but <i>not</i> "private", so that we can see the video.<br>
-			<a href="/submit"><strong>Submit your response here</strong></a> by 11:59pm, April 30th.</p>
+			<!-- <p>Then upload your video to your YouTube account. Make sure the video setting is "unlisted" or "public", but <i>not</i> "private", so that we can see the video.<br> -->
+			
 
 			<br>
-			<h2>Lottery prizes</h2>
+			<h2>Share your advice & Win lottery prizes</h2>
 			<hr class="purple-hr">
 			<p><strong>We lottery out FIVE $50 Amazon gift cards for submissions in April!</strong></p>
 
@@ -72,25 +96,7 @@
 	</div>
 </div>
 
-<!-- <div class="container">
-	<div class="row">
-		{{#each videos}}
-			
-			<div class="col-md-4 col-sm-6 video-panel-container">
-				<div class="thumbnail video-panel">
-					
-					<a href="/singlevideo/{{this._id}}">
-						{{#embedYoutubeImg}}{{this}}{{/embedYoutubeImg}}
-					</a>
-					
-					<div class="caption">
-						<h4>{{this.promptString}}</h4>
-						<p>~{{this.speaker}}</p>
-					</div>
-			</div>
-		</div>
-		{{/each}}
-	</div> 
-</div> -->
+
 
 <script src="/javascripts/videos.js"></script>
+<!--  -->

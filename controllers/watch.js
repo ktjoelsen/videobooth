@@ -16,9 +16,9 @@ router.get('/', function(req, res, next) {
 		console.log(videos);
 		console.log('here');
 
-		res.render('videos', {
+		res.render('watch', {
 			title: 'We are MIT',
-			videos: videos.slice(0,3),
+			videos: videos,
 			helpers: {
 				embedYoutubeImg: function(options) {
 					return '<img src="https://img.youtube.com/vi/' + this.youtubeId + '/hqdefault.jpg" class="img-fluid"/>';

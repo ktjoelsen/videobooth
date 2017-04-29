@@ -9,7 +9,7 @@ a {
 
 p, li {
   font-family: 'Garamond', serif;
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 
@@ -20,6 +20,7 @@ h3 {
 h3 {
   font-size: 10pt;
 }
+
 
 .purple-hr {
   height: 3px;
@@ -62,21 +63,7 @@ h3 {
 }
 
 
-/*h1#navbar-title {
-  color: white;
-  font-family:'Lobster';
-  font-weight: 500;
-  font-size: 1.5em;
-  text-align: center;
-  letter-spacing: .04em;
-  margin-top: -.12em;
-  padding:0;
-  z-index: 2;
-}*/
 
-h1#navbar-title:hover {
-  color: black;
-}
 
 .navbar-nav > li > a {
   color: #fff!important;
@@ -103,8 +90,9 @@ h1#navbar-title:hover {
 
 
 
-/** landng page */
+/** landing page */
 
+/*
 video#bgvid {
     position: fixed;
     top: 50%;
@@ -118,13 +106,7 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    -webkit-filter: grayscale(90%);
-    /*-webkit-filter: blur(10px);*/
-    /*-moz-filter: blur(10px);*/
-    /*-o-filter: blur(10px);*/
-    /*-ms-filter: blur(10px);*/
-    /*-webkit-filter: contrast(110%) brightness(70%) saturate(130%);*/
-    /*filter: contrast(110%) brightness(70%) saturate(130%) blur(3px);*/
+
     filter: contrast(110%) brightness(70%) saturate(130%) ;
     background-size: cover;
 }
@@ -154,7 +136,7 @@ h1#title {
   font-family:'Lobster';
   font-weight: 500;
   font-size: 9em;
-  /*opacity: .8;*/
+  /*opacity: .8;
   text-align: center;
   letter-spacing: .04em;
 }
@@ -167,7 +149,6 @@ h1#title {
   margin-left: auto;
   width: 60%;
 }
-
 
 
 
@@ -217,8 +198,9 @@ a#videos-link:hover{
 
 
 }
-
 */
+
+
 @media (min-width: 1200px) {
   .thumbnail.video-panel {
       min-height: 368px!important;
@@ -243,3 +225,193 @@ a#videos-link:hover{
   height: 10px;
   background-color: #0a1175;
 }
+
+
+/* Videos page*/
+
+.videoContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  height: 500px;
+  display: block;
+  overflow: hidden;
+}
+
+#problem-pitch-overlay  {
+  position: relative;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+video#grassvideo {
+  filter: saturate(120%) hue-rotate(20deg)
+
+}
+
+#problem-pitch-text {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  top: 24%;
+  z-index: 1;
+  color: white;
+  text-align: center;
+
+}
+
+.dark-bg {
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+
+#problem-pitch-text h2 {
+  font-size: 40pt;
+
+}
+
+#problem-pitch-text h3 {
+  font-size: 16pt;
+
+}
+
+
+#video-preview {
+  margin-top: 10em;
+}
+
+
+.purple-btn {
+  color: black;
+  padding: 1em;
+  margin: 1em auto;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 20pt;
+}
+
+
+.purple-btn a {
+  border-radius: 10px;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #590059;
+}
+
+.purple-btn a:hover {
+  border: 3px #8d008d solid;
+  background-color: #8d008d;
+  text-decoration: none;
+  color: white;
+}
+
+
+#instructions {
+  position: relative;
+  top: -7px;
+  padding: 2em 5em;
+  margin-bottom: 3em;
+}
+
+
+#instructions-respond-btn {
+  font-size: 16pt;
+}
+
+#instructions {
+  font-size: 12pt;
+}
+
+#wearemitsticker {
+  height: 200px;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.zero-top-margin {
+  margin-top: 0;
+}
+
+.thumbnail {
+  border: none!important;
+  border-radius: 0!important;
+}
+
+.video-panel-container {
+  padding-left: 30px!important;
+  padding-right: 30px!important;
+}
+
+.video-panel {
+  margin-bottom: 3em!important;
+  padding: 0!important;
+  border-bottom: 1px solid!important;
+  border-color: white!important;
+  height: 350px;
+}
+
+.video-panel h4 {
+  margin-top: 0;
+  font-size: 12pt;
+}
+
+.video-panel img:hover {
+  opacity: 0.7;
+}
+
+
+.center-btn {
+  text-align: center;
+}
+
+/* making responsive */
+@media (min-width: 990px) and (max-width: 1240px) {
+  #problem-pitch-text h2 {
+    font-size: 40pt;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 990px) {
+  #problem-pitch-text h2 {
+    font-size: 30pt;
+  }
+
+  #problem-pitch-text h3 {
+    font-size: 18pt;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  #problem-pitch-text h2 {
+    font-size: 26pt;
+  }
+  #problem-pitch-text h3 {
+    font-size: 16pt;
+  }
+}
+
+@media (max-width: 500px) {
+  #problem-pitch-text h2 {
+    font-size: 20pt;
+  }
+  #problem-pitch-text h3 {
+    font-size: 14pt;
+  }
+}
+
+/* Single video page*/
+.video-container iframe{
+  height: 400px;
+  width: 100%;
+}
+
+

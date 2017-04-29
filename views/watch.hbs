@@ -1,0 +1,29 @@
+
+{{> navbar}}
+
+
+
+
+<div class="container" id="video-preview">
+
+    <div class="row">
+
+        {{#each videos}}
+
+            
+            <div class="col-md-4 col-sm-6 video-panel-container">
+                <div class="thumbnail video-panel">
+                    
+                    <a href="/singlevideo/{{this._id}}">
+                        {{#embedYoutubeImg}}{{this}}{{/embedYoutubeImg}}
+                    </a>
+                    
+                    <div class="caption">
+                        <h4>{{this.promptString}}</h4>
+                        <p>~{{this.speaker}}</p>
+                    </div>
+            </div>
+        </div>
+        {{/each}}
+    </div> 
+</div>

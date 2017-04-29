@@ -14,6 +14,11 @@ var mongoose = require('mongoose');
 var app = express();
 
 
+if (process.env.NODE_ENV === 'development') {
+  require('dotenv').config();
+}
+
+
 /* Connect to MongoDB */
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.PROD_MONGODB);
