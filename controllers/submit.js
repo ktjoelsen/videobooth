@@ -78,6 +78,9 @@ var Video = require('../models/videomodel');
 
 
 var getYouTubeID = function(youtubeLink) {
+    // also account for case when format is https://youtu.be/Iw4H1OKZoi4
+
+    // if format is watch=
     var array = youtubeLink.split('=');
     var id = array[array.length - 1];
     return id;
