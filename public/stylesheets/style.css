@@ -28,6 +28,9 @@ h3 {
   width: 20%;
 }
 
+.medium-padding {
+  padding: 3em;
+}
 
 /* Page widths */
 
@@ -235,7 +238,7 @@ a#videos-link:hover{
   right: 0;
   top: 0;
   margin: auto;
-  height: 500px;
+  height: 600px;
   display: block;
   overflow: hidden;
 }
@@ -258,7 +261,7 @@ video#grassvideo {
   width: 100%;
   top: 24%;
   z-index: 1;
-  color: white;
+  color: black;
   text-align: center;
 
 }
@@ -266,33 +269,39 @@ video#grassvideo {
 .dark-bg {
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
+  
+}
+
+.bright-bg {
+  background: #fff;
+  opacity: 0.7;
+
 }
 
 
 #problem-pitch-text h2 {
-  font-size: 40pt;
+  font-size: 50pt;
 
 }
 
 #problem-pitch-text h3 {
-  font-size: 16pt;
+  font-size: 20pt;
 
 }
 
 
 #video-preview {
-  margin-top: 10em;
+  margin-top: 5em;
 }
 
 
 .purple-btn {
   color: black;
   padding: 1em;
-  margin: 1em auto;
   text-align: center;
   font-family: 'Roboto';
   font-size: 20pt;
+  z-index: 1;
 }
 
 
@@ -302,7 +311,7 @@ video#grassvideo {
   text-align: center;
   text-decoration: none;
   color: white;
-  background-color: #590059;
+  background-color: #bf00bf;
 }
 
 .purple-btn a:hover {
