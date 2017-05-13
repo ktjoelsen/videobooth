@@ -8,6 +8,7 @@ const videoSchema = new mongoose.Schema({
   mitCourse: String,
   promptString: String,
   date: Date,
+  month: String,
   upvotes: Number,
   newQuestion: String,
   tweetSummary: String

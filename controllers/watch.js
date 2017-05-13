@@ -13,15 +13,34 @@ router.get('/', function(req, res, next) {
 		// handle error
 		if (err) return console.error(err);
 
-		console.log(videos);
-		console.log('here');
+		var mayvideos = [];
+		var aprilvideos = [];
+
+		for (var i = 0;  i < videos.length; i++) {
+			var video = videos[i];
+			
+			if (video.month == "2017-04") {
+				aprilvideos.push(video);
+			} else {
+				mayvideos.push(video);
+			}
+		};
+
+
+		
 
 		res.render('watch', {
 			title: 'We are MIT',
-			videos: videos,
+			aprilvideos: aprilvideos,
+			mayvideos: mayvideos,
 			helpers: {
 				embedYoutubeImg: function(options) {
 					return '<img src="https://img.youtube.com/vi/' + this.youtubeId + '/hqdefault.jpg" class="img-fluid"/>';
+				},
+				showIfEmpty:  function(options) {
+					if (this.mayvideos.length == 0) {
+						return "No video submissions for May yet.";
+					};
 				}
 			}
 		});

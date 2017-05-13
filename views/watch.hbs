@@ -7,8 +7,35 @@
 <div class="container" id="video-preview">
 
     <div class="row">
+        <h2>May: Where do you see Heart at MIT?</h2>
 
-        {{#each videos}}
+
+        {{#showIfEmpty}}{{mayvideos}}{{/showIfEmpty}}
+
+        {{#each mayvideos}}
+
+            
+            <div class="col-md-4 col-sm-6 video-panel-container">
+                <div class="thumbnail video-panel">
+                    
+                  <a href="/singlevideo/{{this._id}}">
+                      {{#embedYoutubeImg}}{{this}}{{/embedYoutubeImg}}
+                  </a>
+                  
+                  <div class="caption">
+                      <h4>{{this.tweetSummary}}</h4>
+                      <p>~{{this.speaker}}</p>
+                  </div>
+                </div>
+            </div>
+        
+        {{/each}}
+    </div>
+
+    <div class="row">
+
+        <h2>April: What advice would you give to someone new to MIT?</h2>
+        {{#each aprilvideos}}
 
             
             <div class="col-md-4 col-sm-6 video-panel-container">
@@ -24,6 +51,6 @@
                     </div>
             </div>
         </div>
-        {{/each}}
+        {{/each}}        
     </div> 
 </div>
