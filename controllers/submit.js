@@ -54,6 +54,7 @@ var Video = require('../models/videomodel');
     
     var video = new Video({
         youtubeId: getYouTubeID(body.youtubeLink),
+        dropboxLink: body.dropboxLink,
         speaker: body.kerberos,
         title: body.title,
         upvotes: body.upvotes,

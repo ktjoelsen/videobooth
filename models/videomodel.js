@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 
 const videoSchema = new mongoose.Schema({
   youtubeId: String,
+  dropboxLink: String,
   speaker: String,
   mitAffiliation: String,
   mitCourse: String,
