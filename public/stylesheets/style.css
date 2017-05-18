@@ -94,117 +94,6 @@ h3 {
 
 
 
-/** landing page */
-
-/*
-video#bgvid {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-
-    filter: contrast(110%) brightness(70%) saturate(130%) ;
-    background-size: cover;
-}
-
-
-video#bgvid {
-    transition: 1s opacity;
-}
-.stopfade { opacity: .5; }
-
-
-video#bgvid {
-  display: block;
-}
-
-@media screen and (max-device-width: 800px) {
-    html {
-      background: url(../images/mit.png) #000 no-repeat center center fixed;
-    }
-    #bgvid {
-      display: none;
-    }
-}
-
-h1#title {
-  color: white;
-  font-family:'Lobster';
-  font-weight: 500;
-  font-size: 9em;
-  /*opacity: .8;
-  text-align: center;
-  letter-spacing: .04em;
-}
-
-#landing-page-container {
-  position: relative;
-  margin-top: 10%;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  width: 60%;
-}
-
-
-
-#landing-page-text {
-  margin-right: auto;
-  margin-left: auto;
-  color: white;
-  font-family: 'Roboto';
-  background: rgba(0, 0, 0, 0.5);
-  padding: 3em;
-}
-
-
-button#vidpause {
-    background-color: Transparent;
-    border: none;
-    overflow: hidden;
-    outline:none;
-    font-family: 'Roboto';
-    font-weight: 900;
-    color: white;
-    font-size: 2em;
-    position: absolute;
-    bottom:2%;
-    right:2%;
-}
-
-a#videos-link {
-  color: white;
-  opacity: .8;
-  font-size: 2em;
-  text-align: center;
-  display:table;
-  margin: auto;
-  font-family: 'Roboto';
-  border: 2px solid white ;
-  padding-right: .3em;
-  padding-left: .3em;
-  padding-top: .1em;
-  padding-bottom: .1em;
-  margin-top: 1em;
-}
-
-a#videos-link:hover{
-    text-decoration: none;
-    background: rgba(50,50,50,0.5);
-
-
-}
-*/
-
-
 @media (min-width: 1200px) {
   .thumbnail.video-panel {
       min-height: 368px!important;
@@ -239,7 +128,7 @@ a#videos-link:hover{
   right: 0;
   top: 0;
   margin: auto;
-  height: 600px;
+  height: 650px;
   display: block;
   overflow: hidden;
 }
