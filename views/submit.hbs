@@ -27,12 +27,12 @@
 
     <hr>
     <form class="form-horizontal col-sm-offset-1" method="post" action="/submit/video">
-      <div class="form-group">
+      <div class="form-group required">
         <label for="kerberos" class="control-label">Your Kerberos</label>
         <input type="text" name="kerberos" class="form-control" id="kerberos" placeholder="Your kerberos" required>
       </div>
 
-      <div class="form-group">
+      <div class="form-group required">
         <label for="mitAffiliation" class="control-label">MIT Affiliation</label>
         <select class="form-control" name="mitAffiliation" required>
           <option>Undergraduate student</option>
@@ -51,17 +51,17 @@
         <input type="text" name="kerberos" class="form-control" id="kerberos" placeholder="Your friend's kerberos">
       </div> -->
 
-      <div class="form-group">
+      <div class="form-group required">
         <label for="youtubeLink" class="control-label">YouTube Link</label>
         <input type="text" name="youtubeLink" class="form-control" id="youtubeLink" placeholder="Link to your YouTube video" required>
       </div>
 
-      <div class="form-group">
+      <div class="form-group required">
         <label for="dropboxLink" class="control-label">Dropbox Link (so we can post it on the MindHandHeart YouTube channel)</label>
         <input type="text" name="dropboxLink" class="form-control" id="dropboxLink" placeholder="Dropbox link to your video file" required>
       </div>      
 
-      <div class="form-group">
+      <div class="form-group required">
         <label for="tweetSummary" class="control-label">Tweet-length Summary</label>
         <textarea type="text" name="tweetSummary" class="form-control" id="tweetSummary" placeholder="<140 character summary of your video" required></textarea>
       </div>          
@@ -71,9 +71,9 @@
         <i>Terms and conditions</i>. By submitting a response, you allow "We are MIT" to display your video and tweet on the website as well as the <a target="_blank" href="/files/MindHandHeartReleaseForm.pdf"> MindHandHeart License and Release form</a>.
       </div>
 
-      <div class="form-group">
+      <div class="form-group required">
           <div class="checkbox">
-            <label><input type="checkbox" name="termsAgreement" value="" required>I agree to the terms and conditions</label>
+            <label class="control-label"><input type="checkbox" name="termsAgreement" value="" required>I agree to the terms and conditions</label>
           </div>
       </div>          
 
