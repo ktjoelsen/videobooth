@@ -59,7 +59,7 @@ var Video = require('../models/videomodel');
         title: body.title,
         upvotes: body.upvotes,
         promptString: body.promptString,
-        date: body.recordingDate,
+        date: Date.now(),
         month: "2017-05",
         mitAffiliation: body.mitAffiliation,
         mitCourse: body.mitCourse,
